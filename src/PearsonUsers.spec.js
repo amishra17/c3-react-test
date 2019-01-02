@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  shallow
-} from "enzyme";
+import { shallow } from "enzyme";
 import TestRenderer from 'react-test-renderer';
-import {
-  PearsonUsers
-} from "./PearsonUsers";
-import {
-  UserProfile
-} from './components/UserProfile';
+import { PearsonUsers } from "./PearsonUsers";
+import { UserProfile } from './components/UserProfile';
 
 describe("PearsonUsers", () => {
   let component;

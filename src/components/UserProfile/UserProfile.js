@@ -7,15 +7,15 @@ export const UserProfile = props => {
 	return (
 		<div id={containerID}>
 			<div>
-				<img id="avatar" src={props.avatar} alt=""/>
+				<img className="avatar" src={props.avatar} alt=""/>
 			</div>
 			<div className="user-container">
-				<div id="title">
+				<div className="title">
 					<label>
 						{props.name}
 					</label>
 				</div>
-				<div id="delete-btn">
+				<div className="delete-btn">
 	 				<a id={props.id} onClick={props.onDeleteClick}>Delete</a>
 				</div>
 			</div>

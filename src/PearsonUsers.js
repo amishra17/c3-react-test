@@ -47,10 +47,15 @@ export class PearsonUsers extends Component {
       }
       return response.json()
     }).then(res => {
-      this.setState(prevState => {
-        const filteredData = this.removeDuplicates(prevState.users.concat(res.data));
-        return {users : filteredData}
-      })
+      this.updateUserList(res.data);
+    })
+  }
+
+  updateUserList = responseData => {
+    this.setState(
+      prevState => {
+      const filteredData = this.removeDuplicates(prevState.users.concat(responseData));
+      return {users : filteredData}
     })
   }
 
